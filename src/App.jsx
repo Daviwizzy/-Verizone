@@ -9,7 +9,7 @@ import Mobfooter from "./components/Footer/mob-footer";
 
 // Lazy imports for non-critical components
 import React, { Suspense } from "react";
-import Verify from "./components/Verify/verify";
+import Verify from "./components/Verify/Verify";
 
 const About = React.lazy(() => import("./components/About/About"));
 const Trust = React.lazy(() => import("./components/Trust/Trust"));
