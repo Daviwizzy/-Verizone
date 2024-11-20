@@ -20,7 +20,7 @@ const Questions = React.lazy(() => import("./components/Questions/Questions"));
 const Testimonials = React.lazy(() => import("./components/Testimonials/Testimonials"));
 const MOBTRUST = React.lazy(() => import("./components/Trust/MobTrust"));
 const Contact = React.lazy(() => import("./components/contact/Contact"));
-const Verify = React.lazy(() => import("./components/Verify/Verify"));
+// const Verify = React.lazy(() => import("./components/Verify/Verify"));
 
 function App() {
   return (
@@ -76,9 +76,9 @@ function App() {
       <Suspense fallback={<div>Loading Testimonials...</div>}>
         <Testimonials />
       </Suspense>
-      <Suspense fallback={<div>Loading Verify...</div>}>
+      {/* <Suspense fallback={<div>Loading Verify...</div>}>
         <Verify />
-      </Suspense>
+      </Suspense> */}
       <Suspense fallback={<div>Loading Questions...</div>}>
         <Questions />
       </Suspense>
